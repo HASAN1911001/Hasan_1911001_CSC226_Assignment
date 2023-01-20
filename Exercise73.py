@@ -21,6 +21,7 @@ def factorial(n):
 
 def estimate_pi():
     "Function to estimate the value of pi using Ramanujan infinite series"
+
     total = 0
     k = 0
     factor = 2 * math.sqrt(2) / 9801
@@ -34,7 +35,8 @@ def estimate_pi():
         if abs(term) < 1e-15:
             break
         k += 1
-    
-    return 1 / (factor * total)
+    pi = 1 / (factor * total)
+    return pi
 
-print(estimate_pi())
+print(f"estimated pi = {estimate_pi()}")
+print(f"difference between estimate_pi and math.pi is: {abs(estimate_pi() - math.pi)}")
