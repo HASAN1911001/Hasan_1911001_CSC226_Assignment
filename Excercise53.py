@@ -16,6 +16,7 @@ possible to form a triangle:
     with the given lengths can form a triangle.
 """
 
+# 1
 def is_triangle(a, b, c):
     if a > b + c:
         print("No")
@@ -26,11 +27,13 @@ def is_triangle(a, b, c):
     else:
         print("Yes")
 
+# 2
 def prompting():
     a = int(input("Length of first stick?: "))
     b = int(input("Length of second stick?: "))
     c = int(input("Length of third stick?: "))
     
     is_triangle(a, b, c)
-    
+
+# Driver code  
 prompting()
